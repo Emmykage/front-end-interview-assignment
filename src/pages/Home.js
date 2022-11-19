@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '@mui/material'
+import PersonIcon from '@mui/icons-material/Person';
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ Hayes Valley Health San Francisco
         <form>
             <div className='input-div'>
                 <div>
-                <input type="text" name='first_name' />
+                <input startIcon={<PersonIcon/>} type="text" name='first_name' placeholder='first name'/>
                 </div>
                 <div>
                 <input type="text" name='last_name' />
@@ -53,8 +54,9 @@ Hayes Valley Health San Francisco
                
             </div>
             <Button 
+            startIcon={<PersonIcon/>}
             style={{
-                width: 8
+                width: 800
             }}
             color='primary'
             variant='contained' >Send a referal </Button>
